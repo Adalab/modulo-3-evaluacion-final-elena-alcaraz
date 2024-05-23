@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import headerImg from "../images/Rick_and_Morty.png"
 import "../styles/App.scss";
 import CharacterList from "./CharacterList";
 import getDataFromAPi from "../services/api";
@@ -52,7 +53,7 @@ function App() {
         <Route path="/" element={
         <>
         <div className="logoDiv">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Rick_and_Morty_title_card_%28cropped%29.png" alt="Logo Rick & Morty" className="logoDiv_mainLogo"/>
+        <img src={headerImg} alt="Logo Rick & Morty" className="logoDiv_mainLogo"/>
         </div>
 
         <Filters changeFormDataText={changeFormDataText} nameFilter={nameFilter}/>
