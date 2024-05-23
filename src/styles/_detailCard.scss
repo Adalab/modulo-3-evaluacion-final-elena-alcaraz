@@ -1,0 +1,81 @@
+.characterDetailCard {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_img {
+        width: 200px;
+        border: solid #97ce4c 8px;
+
+        @media screen and (width> 767px) {
+            width: 350px; 
+        }
+    }
+
+    &_title {
+        color: #35c9dd;
+        font-size: 50px;
+
+        @media screen and (width> 767px) {
+            font-size: 80px;
+        }
+
+    }
+
+    &_specie {
+        color: #97ce4c;
+        letter-spacing: 2px;
+        font-size: 30px;
+
+        @media screen and (width> 767px) {
+            font-size: 50px;
+        }
+
+    }
+
+    &_origin {
+        color: #97ce4c;
+        margin-bottom: 10px;
+
+        @media screen and (width> 767px) {
+            font-size: 40px;
+        }
+    }
+
+    &_episodesTitle {
+        color: white;
+    }
+
+    &_episode {
+        text-decoration: none;
+    }
+
+    &_status {
+        color: #97ce4c;
+        letter-spacing: 2px;
+        font-size: 40px;
+
+        @media screen and (width> 767px) {
+            font-size: 70px;
+        }
+    }
+}
+
+.backLink {
+    color: #35c9dd;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 30px;
+
+    @media screen and (width> 767px) {
+        font-size: 40px;
+    }
+}
+
+.deadIcon {
+    color: white;
+    margin-top: 20px;
+    font-size: 50px;
+}

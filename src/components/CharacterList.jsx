@@ -2,15 +2,22 @@ import CharacterCard from './CharacterCard'
 
 function CharacterList({ characterList }) {
 
-    const html = characterList.map((character) => <CharacterCard key={character.id} character={character} />)
+  const sortedCharacterList = characterList.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
 
+    const html = sortedCharacterList.map((character) => 
+      <CharacterCard key={character.id} character={character} />)
 
-  return (
-    <div>
+  return ( html.length > 0 ?
+
+    <div className="characterList">
 
         {html}
 
     </div>
+
+    : <p className="searchError">No se encuenta el personaje</p>
   )
 }
 

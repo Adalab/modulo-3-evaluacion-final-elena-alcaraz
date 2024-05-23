@@ -9,6 +9,9 @@ const getDataFromApi = () => {
                 id: character.id,
                 name: character.name,
                 specie: character.species,
+                origin: character.origin.name,
+                episode: character.episode,
+                status: character.status
             };
         });
         return newArray;

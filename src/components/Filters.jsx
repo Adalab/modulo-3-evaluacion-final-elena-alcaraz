@@ -2,14 +2,20 @@
 function Filters({ changeFormDataText, nameFilter }) {
 
     const handleChange = (ev) => {
-        console.log(ev.target.value)
         changeFormDataText(ev.target.value);
     }
 
   return (
-    <div>
-        <label htmlFor="name">Encuentra tu personaje favorito</label>
-        <input type="text" name="name" id="name" onChange={handleChange} value={nameFilter}/>
+    <div className="filter">
+        <label htmlFor="name" className="filter_text">¡Encuentra tu personaje favorito!</label>
+        <input 
+          type="text"  
+          placeholder="Ej. Morty" 
+          name="name" id="name" 
+          className="filter_input"
+          onChange={handleChange} 
+          value={nameFilter}
+        />
     </div>
   )
 }
