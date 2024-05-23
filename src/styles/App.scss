@@ -54,6 +54,9 @@
     &_input{
         margin: 10px;
         width: 100px;
+        height: 25px;
+        font-family: Creepster;
+        font-size: 20px;
 
         @media screen and (width> 767px) {
             width: 200px;  
@@ -65,6 +68,20 @@
         }
     }
 
+}
+
+.filterByStatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_input {
+        height: 25px;
+        background-color: #35c9dd;
+        font-family: Creepster;
+        font-size: 20px;
+    }
 }
 
 .searchError{

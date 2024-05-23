@@ -5,19 +5,21 @@ import getDataFromAPi from "../services/api";
 import Filters from "./Filters";
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
+import FilterByStatus from "./FilterByStatus";
 
 function App() {
 
   const [characterList, setCharacterList] = useState([])
   const [filteredCharacterList, setFilteredCharacterList] = useState([]);
   const [nameFilter, setNameFilter] = useState("")
+  const [statusFilter, setStatusFilter] = useState("")
 
   useEffect(() => {
     getDataFromAPi().then((newArray) => { setCharacterList(newArray) })
   }, [])
 
 
-  //Filter
+  //Filter by text
   const changeFormDataText = (value) => {
     setNameFilter(value); 
     setFilteredCharacterList(
@@ -27,7 +29,12 @@ function App() {
     );
   };
 
-  const filterList = nameFilter ? filteredCharacterList : characterList;
+  let filterList = nameFilter ? filteredCharacterList : characterList;
+
+  if (statusFilter) {
+    filterList = filterList.filter(character => character.status === statusFilter)
+  } 
+
 
   //Router DOM
   const { pathname } = useLocation()
@@ -49,6 +56,7 @@ function App() {
         </div>
 
         <Filters changeFormDataText={changeFormDataText} nameFilter={nameFilter}/>
+        <FilterByStatus statusFilter={statusFilter} setStatusFilter={setStatusFilter}/>
 
         <CharacterList characterList={filterList} />
         </>

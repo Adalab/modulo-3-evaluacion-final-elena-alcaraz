@@ -7,10 +7,10 @@ function Filters({ changeFormDataText, nameFilter }) {
 
   return (
     <div className="filter">
-        <label htmlFor="name" className="filter_text">¡Encuentra tu personaje favorito!</label>
+        <label htmlFor="name" className="filter_text">¡Find your favorite character!</label>
         <input 
           type="text"  
-          placeholder="Ej. Morty" 
+          placeholder="e.g. Morty" 
           name="name" id="name" 
           className="filter_input"
           onChange={handleChange} 

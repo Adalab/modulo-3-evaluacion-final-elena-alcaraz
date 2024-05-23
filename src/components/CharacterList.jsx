@@ -17,7 +17,7 @@ function CharacterList({ characterList }) {
 
     </div>
 
-    : <p className="searchError">No se encuenta el personaje</p>
+    : <p className="searchError">Character not found</p>
   )
 }
 
