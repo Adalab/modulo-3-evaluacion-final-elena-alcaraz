@@ -7,6 +7,7 @@ import Filters from "./Filters";
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
 import FilterByStatus from "./FilterByStatus";
+import Footer from "./Footer";
 
 function App() {
 
@@ -60,6 +61,9 @@ function App() {
         <FilterByStatus statusFilter={statusFilter} setStatusFilter={setStatusFilter}/>
 
         <CharacterList characterList={filterList} />
+
+        <Footer />
+        
         </>
       } />
 
