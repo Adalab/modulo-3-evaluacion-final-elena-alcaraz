@@ -1,4 +1,4 @@
-import headerImg from "../images/Rick_and_Morty.png"
+import headerImg from "../images/mortyrick.png"
 
 function Footer() {
   return (

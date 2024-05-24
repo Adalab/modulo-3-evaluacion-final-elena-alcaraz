@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import headerImg from "../images/Rick_and_Morty.png"
+import headerImg from "../images/mortyrick.png"
 import "../styles/App.scss";
 import CharacterList from "./CharacterList";
 import getDataFromAPi from "../services/api";
