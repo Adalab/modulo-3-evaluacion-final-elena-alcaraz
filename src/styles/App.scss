@@ -36,16 +36,17 @@
 
 
 .characterList {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
+    text-align: center;
 
     @media screen and (width> 767px) {
         margin-top: 20px;
         list-style: none;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
     }
@@ -60,7 +61,7 @@
     }
 }
 .character_card {
-    width: 200px;
+    width: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +71,10 @@
     margin: 5px;
     background-color: #35c9dd;
     transition: transform 0.3s;
+
+    @media screen and (width> 767px) {
+        width: 200px;
+    }
 
     &_link {
         text-decoration: none;
