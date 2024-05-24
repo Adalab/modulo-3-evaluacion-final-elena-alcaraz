@@ -4,7 +4,7 @@
 ¡Bienvenidos humanos y otras especies al buscador de personajes de Rick & Morty! 
 Con este buscador, podrás explorar el universo de Rick & Morty desde cualquier dispositivo, móvil, tablet y desktop.
 
-##🚀 Características Principales
+## 🚀 Características Principales
 - **Búsqueda por Nombre**: Escribe el nombre de tu personaje favorito, o explora el resto de personajes. En caso de que tu personaje no haya sido localizado, te lo indicará. 
 - **Filtro por Estado**: Vivo, muerto o desconocido. Además, al navegar por la página principal podrás ver que en la tarjeta se muestran los personajes muertos con un icono cuando pasas el ratón por encima. 
 - **Tarjetas Interactivas**: Haz clic en cualquier tarjeta de cualquier personaje para acceder a su información. 
