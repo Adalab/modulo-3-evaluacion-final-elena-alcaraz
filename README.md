@@ -1,4 +1,5 @@
-![rickmorty](https://github.com/Adalab/modulo-3-evaluacion-final-elena-alcaraz/assets/156465486/8f5d9b0a-87a3-4337-8fa8-8775a4b72a92)
+![rickmorty1](https://github.com/Adalab/modulo-3-evaluacion-final-elena-alcaraz/assets/156465486/5f279d71-6be1-4b05-bd8a-e186166a4f7b)
+
 
 # 🛸 Buscador de personajes de Rick & Morty
 
