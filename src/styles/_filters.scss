@@ -1,0 +1,57 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &_text {
+        font-family: Creepster;
+        letter-spacing: 1px;
+        color: #97ce4c;
+
+        @media screen and (width> 767px) {
+            font-size: 35px;   
+        }
+    }
+
+    &_input{
+        margin: 10px;
+        width: 100px;
+        height: 25px;
+        font-family: Creepster;
+        font-size: 20px;
+
+        @media screen and (width> 767px) {
+            width: 200px;  
+        }
+
+        @media screen and (width> 1279px) {
+            width: 350px;
+            height: 25px;
+        }
+    }
+
+}
+
+.filterByStatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_input {
+        height: 25px;
+        background-color: #35c9dd;
+        font-family: Creepster;
+        font-size: 20px;
+    }
+
+
+}
+
+.searchError{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}

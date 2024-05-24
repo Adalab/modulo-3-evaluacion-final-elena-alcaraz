@@ -29,7 +29,7 @@ function CharacterDetail({ characterDetail }) {
 
             <p className="characterDetailCard_episodesTitle">Episodes: {characterDetail.episode.length} </p>
             <button onClick={handleSeeEpisodesClick} className="seeEpisodesButton">
-              {showEpisodes ? 'Hide episodes' : 'Episode List'}
+              {showEpisodes ? 'Hide episodes' : 'Show Episodes'}
             </button>
             
             
