@@ -98,6 +98,12 @@
 
 }
 
+.seeEpisodesButton:hover {
+    background-color: #099d8d;
+    color: #fff;
+    transform: scale(1.2);
+}
+
 .backLink {
     color: #35c9dd;
     text-decoration: none;
@@ -110,6 +116,11 @@
         font-size: 40px;
         margin-top: 80px;
     }
+}
+
+.backLink:hover {
+    color: #fff;
+    transform: scale(1.2);
 }
 
 .deadIcon {

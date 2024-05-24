@@ -1,4 +1,5 @@
 @import "./_detailCard.scss";
+@import "./_footer.scss";
 
 *{
     padding: 0;
@@ -124,6 +125,7 @@
     border: solid #97ce4c 2px;
     margin: 5px;
     background-color: #35c9dd;
+    transition: transform 0.3s;
 
     &_link {
         text-decoration: none;
@@ -134,51 +136,26 @@
         letter-spacing: 2px;
     }
 
+    &_deadIcon {
+        color: white;
+        width: 25px; 
+        z-index: 1;    
+    }
+
+}
+
+.character_card:hover{
+    background-color: #099d8d;
+    color: #fff;
+    transform: scale(1.2);
+    z-index: 2;
+    
 }
 
 .character_card img {
     width: 100%;
+    z-index: 2;
 }
 
 
-
-.footer {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-
-    @media screen and (width> 767px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    &_license {
-        color:#97ce4c;
-        margin-bottom: 10px;
-
-        @media screen and (width> 767px) {
-            font-size: 20px;
-        }
-    }
-
-    &_logo {
-        width: 100px;
-
-        @media screen and (width> 767px) {
-            width: 130px;
-        }
-        
-        &_img {
-            width: 100%;
-        }
-    }
-
-}
 
